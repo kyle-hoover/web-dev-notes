@@ -1,0 +1,59 @@
+<!DOCTYPE> = specifies the version of HTML. <!DOCTYPE html> is the first line of any HTML document and tells the browser what version of HTML we're using
+
+<html> = root of the entire document
+  
+<head> = section that provides the page title, meta info, includes other files, etc.
+  
+<body> = the actual content
+  
+<p> = appears anywhere within the body to represent a paragraph of text expressing a single thought.
+	Usually displayed with vertical space before and after the paragraph
+
+<!DOCTYPE html>
+<head>...</head>
+<body>
+	(all web content goes here!)
+	<p> This is a paragraph within the p tag that expresses a single thought or idea. The paragraph should be surrounded with a vertical white space buffer both before and after the paragraph. </p>
+</body>
+</html>
+
+HTML specifies the structure but not how the content will be displayed. It is up to the browser to decide how to display the content.
+
+HTML supports 6 section heading tags
+	<h1> used for most important titles (ex. title of entire web page)
+	<h2-h5> used for next important subheader
+	<h6> used for least important subheader
+	Magnitude of importance affects font size that will be displayed
+	Can be used to divide content into readable subsections
+	Browser determines font and size depending on header magnitude
+	
+<body>
+	<h1>This is the most important header</h1>
+	<p>This is a paragraph supporting the most important header.</p>
+	<h3>This is a subheader</h3>
+	<p>This is a paragraph supporting the subheader. Notice that the font size of the subheader is smaller than the size of the most important header.</p>
+</body>
+
+<b> = indicates that the text should be bold
+<i> = indicates that the text should be italicized
+	
+<strong> = indicates that the text should be bold and is more important
+<em> = indicates that the text should be italicized and emphasized
+	
+<hr> = represents a more serious shift in content, visually separates content by inserting a visible line between preceding and subsequent content (creates a horizontal line)
+<br> = represents a single line break, inserts a blank line
+
+<div>
+	Provides additional structure (this part of the content goes together)
+	Block-level container for organized content
+	Often used for:
+		Page headers/footers
+		Menu or nav bar
+		Photo galleries
+		Ads or outside media
+
+<span> = here's some text/content that we were going to eventually apply some formatting/styling to
+	Inline container for organized content
+	Usually a smaller part of content than the div tag
+	Block-level elements (div) are designed to contain larger chunks of content designed to stand alone as a unit
+	Inline elements (span) are designed to contain smaller
