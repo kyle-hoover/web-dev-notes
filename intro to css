@@ -1,0 +1,77 @@
+cascading style sheets (css) = a formatting language used to describe the appearance of content in an html file 
+	has a standardized specification defined by the world wide web consortium (w3c)
+		
+html = the content
+	what information does the page contain?
+	what is in the headings, body, etc.?
+	how is the information structured?
+	
+css = the presentation
+	what does the page look like?
+	what color, formatting, text size, etc. should the various parts have?
+	
+how css works:
+	1. the web browser receives the html page from the server via http
+	2. the html can include css either in the same file or with link to separate file
+				if in a separate file, the browser will request that file separately via http
+	3. when all html and css files are available the browser will render the page
+	4. for each element in the html page, the web browser will display the content and use the css to style it
+	5. ideally, exactly one set of css styles will apply to any given element
+	6. if there are conflicting styles defined, complex rules determine what gets applied
+	
+inline: use tag's "style" attribute to specify appearance 
+	<p style="color:red; background-color:white"> hey </p>
+	pros:
+		easy to use and good for quick, one off situations
+	cons:
+		mixing content and presentation should be avoided
+		hard to manage for large, complex pages
+		
+internal: create <style> elements in html and assign to different tags, classes, etc. 
+	<style> 
+		h1 {
+			color:red
+		} 
+	</style>
+	pros:
+		separates content and presentation
+		easy to use
+			especially if you want to apply the same style to all tags of a certain type (say <p>)
+		good if you only have a limited amount of CSS in the page
+	cons:
+		hard to manage for large, complex pages
+		cannot reuse across multiple pages
+
+external: specify styling in a separate css file
+	include css in a separate file and link the file in the head of the html file
+	<link rel="stylesheet"
+				type="text/css"
+				href="movie-styles.css" />
+	pros:
+		separates content and presentation
+		can include many different css pages with multiple <link> tags
+	cons:
+		lots of different files to manage (which might be overkill for smaller pages)
+		
+3 types of css selectors:
+	
+	element selector = applies to elements
+		h1, h2, h3, etc.
+		<h1>...<h2>
+			h1 {
+				color:red;
+				}
+	
+	class selector = applies to all elements in a class (starts with a period .)
+		defined classes (in this example, address)
+		<div class="address">...</div>
+			.address {
+				color:red;
+			}
+			
+	id selector = applies styling to one specific element in id class (starts with a hashtag #)
+		<p id="section1">...</p>
+			#section1 {
+				color:red;
+			}
+				
