@@ -1,0 +1,4 @@
+lists = can either be ordered or unordered
+  <ol> = ordered list
+    will put numbers in front of the list items
+    
