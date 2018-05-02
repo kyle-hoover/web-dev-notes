@@ -57,3 +57,15 @@ HTML supports 6 section heading tags
 	Usually a smaller part of content than the div tag
 	Block-level elements (div) are designed to contain larger chunks of content designed to stand alone as a unit
 	Inline elements (span) are designed to contain smaller
+	
+<!-- Comments --> = text in HTML not rendered in the browser
+	Used to explain the HTML or leave notes for other programmers
+	Temporarily remove HTML content
+	
+HTML Special Entities = We can't just type < or > because these are the starts of commands. We have to use &; to print these	
+	&nbsp; = allows for extra white space between words
+	&lt; = prints the < character
+	&gt; = prints the > character
+	&amp; = prints the & character
+	&copy; = prints the copywrite character
+	&reg; = prints the registration character
