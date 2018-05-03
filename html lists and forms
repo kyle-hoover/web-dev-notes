@@ -1,4 +1,21 @@
 lists = can either be ordered or unordered
   <ol> = ordered list
     will put numbers in front of the list items
-    
+      1. January
+      2. February
+      3. March
+    <ol>
+      <li> January </li>
+      <li> February </li>
+      <li> March </li>
+    </ol>
+	<ul> = unordered list
+		will put list with some kind of icon in front that isn't numbers
+			- Kyle
+			- Sandy
+			- Derek
+		<ul>
+			<li> Kyle </li>
+			<li> Sandy </li>
+			<li> Derek </li>
+		</ul>
