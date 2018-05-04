@@ -19,3 +19,29 @@ lists = can either be ordered or unordered
 			<li> Sandy </li>
 			<li> Derek </li>
 		</ul>
+	use css style properties to determine the style of bullet points used within the unordered list
+		<ul style="list-style-type:circle">
+		disc = filled in bullet
+		cirle = empty circle
+		square = square bullet
+		none = no bullets, just list items
+	can use css styles for the ordered lists as well
+		<ol type="A">
+			type="1" = 1. 2. 3. 4.
+			type="A" = A. B. C. D.
+			type="a" = a. b. c. d.
+			type="I" = I. II. III. IV.
+			type="i" = i. ii. iii. iv.
+	nested list = can have a list inside a list (even unordered list within ordered list)
+		<ul style="list-style-type:circle">
+			<li> Kyle </li>
+			<li> Chris </li>
+				<ol type="A">
+					<li> SD2x </li>
+					<li> SD4x </li>
+				</ol>
+		</ul>
+		
+forms = are used to retrieve information from user of a web page
+	enclose all form fields within <form> elements
+	
