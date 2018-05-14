@@ -45,3 +45,79 @@ lists = can either be ordered or unordered
 forms = are used to retrieve information from user of a web page
 	enclose all form fields within <form> elements
 	
+type = provides more information on what type of data to expect from the user for the form
+	<input type="value">
+	different types often allow different input formats that make data entry more convenient for the user
+	Example of types:
+		<br> Full Name:
+		<input type="text" name="username">
+			single input field
+	
+		<br> Email Address:
+		<input type="email" name="email">
+			expects to have a valid email address
+			
+		<br> Password:
+		<input type="password" name="password">
+			will hide password behind asterisks, bullets, etc.
+			
+		<br> Date of Birth:
+		<input type="date" name="dob>
+			allows us specify the format of the data
+	
+slider = allows the user to slide back and forth and choose different values
+	Ex:
+		<br> Graduation Year:
+		<input type="range" name="gradYr" min="1950" max="2020">
+	we can specify the minimum and maximum values of the slider
+	
+radio button = appears as a circle we can click, means we can only choose one out of something
+	Ex.
+		<br> Gender:
+			<input type="radio"
+			name="genderOption"
+			value="male"> Male
+			
+		<br> Gender:
+			<input type="radio"
+			name="genderOption"
+			value="female"> Female
+			
+		<br> Gender:
+			<input type="radio"
+			name="genderOption"
+			value="undisclosed"> Undisclosed
+			
+checkboxes = similar to radio button but we can choose more than one
+	Ex.
+		<br> Race:
+		
+		<input type="checkbox" name="race" value="afrAmer"> African American
+		
+		<input type="checkbox" name="race" value="asian"> Asian
+		
+		<input type="checkbox" name="race" value="white"> White
+		
+		<input type="checkbox" name="race" value="amIndian"> American Indian
+		
+		<input type="checkbox" name="race" value="pacIsl"> Pacific Islander
+		
+		<input type="checkbox" name="race" value="other"> Other
+		
+color chooser = can pick a color
+	Ex.
+		<br> Favorite Color:
+		<input type="color" name="favcolor">
+		
+file = allows the user to upload a file
+	Ex.
+		<br> Resume Submission:
+		<input type="file" name="resume"
+		
+buttons = allows users to commit an action
+	Ex.
+		<input type=submit" value="Submit">
+			allows user to take the action of the form
+		
+		<input type="reset" value="Reset">
+			will clear all fields and set them back to default
