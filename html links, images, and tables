@@ -1,0 +1,80 @@
+<img> tag includes an image in the HTML page
+ 	required attributes:
+    	src = specifies the link to the image to be included (can be relative or absolute path)
+    	alt = text to include an image description in case image does not load, or additional information is needed
+  	other attributes:
+		height, width = specified in pixels (e.g. 50px)
+		title = tooltip text displayed when mouse hovers over image
+	ex:
+		<img src="woman-cycling.jpg" alt="Woman cycling to improve fitness">
+		
+absolute vs relative path
+	absolute path = URL that can be accessed if provided to the browser on it's own
+		<img src="http://example.com/fitness/photos/woman-cycling.jpg" alt="Woman cycling to improve fitness">	
+	
+	relative path = path to a file included within local file system relative to the HTML page
+		<img src="photos/woman-cycling.jpg" alt="Woman cycling to improve fitness"
+			image is in the photos folder in this example
+			
+<a> tag = tag used to include a link to another page/resource on Web
+	associated attributes:
+		href (required) = specifies the location to which to navigate if the link is clicked
+		target = specifies where the link should be open when clicked
+			open new window, open new link, etc.
+	similar to images, value of href attribute can either be a relative or absolute link
+	text of element will be displayed as clickable link
+	ex:
+		<a href="http://www.seas.upenn.edu" target="_self"> Penn Engineering </a>
+			target = just show content in this web browser itself
+			
+bookmarks = sometimes we can use an <a> tag or an <a> element to link not just to another webpage but somewhere specifically within that webpage
+	we can do that using the id attribute for any element in the html page
+	ex:
+		1. define an id attribute for the element for which you would like to create a bookmark
+			<h3 id="health"> Healthy Eating </h3>
+		
+		2. create a link to serve as bookmark
+			-from within the same page:
+				<a href="#health"> Jump to Healthy Eating Section </a>
+			-from a different page:
+				<a href="index.html#health"> Jump to Healthy Eating Section </a>
+					in this cage index.html is the name of the different page
+					
+<table> tag = used to define and contain a table
+	ex.
+		<table border=1>
+			<tr>
+				<th> First Name </th>
+				<th> Last Name </th>
+				<th> Email Address </th>
+			</tr>
+			<tr>
+				<td> John </td>
+				<td> Doe </td>
+				<td> jodoe@ex.com </td>
+			</tr>
+			<tr>
+				<td> Jane </td>
+				<td> Doe </td>
+				<td> jadoe@ex.com </td>
+			</tr>
+		</table>
+		
+	<table border=1> = specifies the border which is the width of the border between the elements and the table (in this case 1 pixel)
+	<tr> tag = defines a table row
+	<th> tag = defines table header (first row, titles)
+	<td> tag = defines table cell ("table data")
+	
+	other table CSS properties:
+		border = draws a border around table, row, or cell; default is no border (1px, solid black, etc.)
+		padding = space between cell content and it's borders (15px, 10px, etc.)
+		text-align = horizontal text alignment (center, left, right, etc.)
+		border-spacing = space between cells (2px, 4px, etc.)
+		
+	use rowspan attribute to span multiple rows (merge vertically)
+		<td rowspan="2"> Contents </td>
+			this would merge 2 cells into one, vertically
+	
+	use colspan attribute to span multiple columns (merge horizontally)
+		<td colspan="2"> Contents </td>
+			this would merge 2 cells into one, horizontally
