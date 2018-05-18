@@ -1,1 +1,7 @@
+.css() = jQuery to modify CSS properties of an element
 
+$('.example-class').css('color', '#FFFFFF');
+	.example-class = the class we're changing
+	.css = the first argument is the CSS property we want to change (in this case, that's 'color')
+	#FFFFFF = new value for the given property in the first argument (the .css() method changes the color of .example-class elements to '#FFFFFF')
+	
