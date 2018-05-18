@@ -28,3 +28,29 @@ $('.example-class').animate({
 	borderWidth: '10px'
 }, 500);
 
+addClass = adds css class to an element
+	best to keep css on own file rather than bogging down javascript
+	
+$('.example-class').addClass('active');
+	.addClass() is called on the jquery .example-class selector
+	.addClass() adds the 'active' class to all .example-class elements
+	argument passed to addClass does not have a period preceding it (it expects a class, and therefore only needs the name of the class)
+	
+$('.menu-button').on('mouseenter', () => {
+	$('.menu-button').addClass('button-active');
+});
+	instead of the css chains we did, we can replace with a single css class
+	
+removeClass = removes css class from an element
+	
+$('.example-class').removeClass('active');
+	.removeClass() is called on .example-class elements
+	the method removes the 'active' class from all .example-class elements
+	
+toggleClass = adds a class if an element does not already have it, and removes it if an element does already have it
+
+$('.example-class').toggleClass('active');
+	.toggleClass() is called on .example-class elements
+	adds the 'active' class to .example-class elements if they do not have it already
+	removes the 'active' class from .example-class elements if they do have it already
+	
