@@ -39,4 +39,14 @@ $('div').fadeToggle(1000);
 	
 we can also use strings in our arguments
 	$('div').fadeToggle("fast");
+	make sure to use quotes around the argument
+	
+.slideDown(), .slideToggle() and .slideUp() = an element on your web page will slide into place instead of appearing or disappearing
+	like with the other effects, sliding can be applied to any element on your page whether it be an image, a video, or text
+	sliding methods have an optional parameter to determine how long the animation will take
+	
+$('.menu-button').on('click', () => {
+	$('.menu-content').slideDown('slow');
+});
+	when the menu-button class is clicked, the menu-content class will slideDown (slowly)
 	
