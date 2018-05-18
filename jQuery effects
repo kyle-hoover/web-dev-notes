@@ -32,3 +32,8 @@ $('.fade-out-button').on('click', () => {
 	$('.fade-image').fadeOut(500);
 });
 
+.fadeToggle() = will toggle between fadeIn and fadeOut (depending on the state that they're in)
+	
+$('div').fadeToggle(1000);
+	all div elements will fadeToggle over a period of 1000 milliseconds (turn invisible if visible or visible if invisible)
+	
