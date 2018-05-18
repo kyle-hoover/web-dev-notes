@@ -21,3 +21,14 @@ effects = a group of methods in the jQuery library that are responsible for addi
 	});
 		when the toggle-button class is clicked, the shoe-information-3 is toggled (shown or hidden)
 		
+.fadeIn() and .fadeOut() = make the element appear or disappear over a given period of time
+	both take an optional parameter that can specify how long the animation will take
+	
+$('div').fadeOut(1000);
+	all div elements will fadeOut over a period of 1000 milliseconds (1 second)
+	the default is 400
+
+$('.fade-out-button').on('click', () => {
+	$('.fade-image').fadeOut(500);
+});
+
