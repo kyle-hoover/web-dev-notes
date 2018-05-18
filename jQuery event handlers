@@ -1,0 +1,16 @@
+event handler has two parts:
+	1.	event listener = a method that listens for a specified event to occur, like a click event
+	2.	callback function = a function that executes when something triggers the event listener
+	
+$('.example-class').on('click', () => {
+	$('.example-class') = selects all elements of the example-class class
+	.on('click') = the event listener (checks if the user has clicked on the example-class element
+	second argument to .on() is a callback function (when a 'click' occurs on an example-class element, this function executes)
+	 
+event listeners:
+	'click' = when the user clicks
+		$('.example-class').on('click', () => {
+	'mouseeneter' = triggers a callback function when a user enters the area that a targeted element occupies
+		$('.example-class').on('mouseenter',  () => {
+	'mouseleave' = triggers a callback function when a user's mouse leaves the area that an element occupies
+		$('.example-class').on('mouseleave', () => {
