@@ -1,0 +1,17 @@
+effects = a group of methods in the jQuery library that are responsible for adding dynamic behavior to websites
+	for example drop down menus, warning messages for incorrect passwords, etc.
+	one or two lines of jQuery can replace long JavaScript code blocks
+	
+.hide() = browser will render the html element hidden as if it didn't exist
+	$('.hide-arrow').on('click', () => {
+		$('.shoe-information').hide();
+	});
+		when the hide-arrow class is clicked, the shoe-information class will be hidden
+		usually below information will be moved up when it is hidden
+		
+.show() = if an element is hidden, .show() will un-hide it
+	$('.show-arrow').on('click', () => {
+		$('.shoe-information-2').show();
+	});
+		when the show-arrow class is clicked, the shoe-information-2 class will be shown
+		
