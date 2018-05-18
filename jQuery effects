@@ -37,3 +37,6 @@ $('.fade-out-button').on('click', () => {
 $('div').fadeToggle(1000);
 	all div elements will fadeToggle over a period of 1000 milliseconds (turn invisible if visible or visible if invisible)
 	
+we can also use strings in our arguments
+	$('div').fadeToggle("fast");
+	
