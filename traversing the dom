@@ -67,3 +67,24 @@ $('.example-class-one').closest('.another-class');
 </div>
 	the jQuery above would select the <div> element that wraps the paragraph with a value of 1, because it is the closest element, 
 	up the DOM tree, with the class .another-class
+	
+.next() = targetting the next element rather than all the siblings
+
+<div class='heading'>MENU</div>
+<ol style='display: none'>
+  <li>Appetizers</li>
+  <li>Entrees</li>
+  <li>Salads</li>
+  <li>Sides</li>
+  <li>Desserts</li>
+</ol>
+	since the div and <ol> exist on the same level of the DOM, they are siblings
+	since there are no elements between them, the <ol> is the next sibling of '.heading'
+	we can add an event handler to the div element and use the .next() method to show and hide the <ol> using the .toggle() method
+	
+const $heading = $('.heading');
+$heading.on('click', () => {
+  $(event.currentTarget).next().toggle();
+});
+	in the example above, the .on() method attaches the click event handler to $heading
+	then the callback function will toggle the class of the $heading's next sibling, the ol element.
