@@ -15,3 +15,9 @@ effects = a group of methods in the jQuery library that are responsible for addi
 	});
 		when the show-arrow class is clicked, the shoe-information-2 class will be shown
 		
+.toggle() = can use one button to show or hide elements
+	$('.toggle-button').on('click', () => {
+		$('.shoe-information-3').toggle();
+	});
+		when the toggle-button class is clicked, the shoe-information-3 is toggled (shown or hidden)
+		
