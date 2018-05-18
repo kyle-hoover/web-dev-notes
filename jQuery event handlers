@@ -30,3 +30,28 @@ $('.product-photo').on('mouseenter',() => {
 })
 	this says that for our product-photo class, when the mouse enters, we will add a css class to zoom in (photo-active)
 	when the mouse leaves, we will remove the photo-active class (which will effectively zoom back out)
+
+currentTarget = targets the current element that the user mouses over
+	$('.example-class').on('mouseenter', event => {
+		$(event.currentTarget).addClass('photo-active');
+	});
+	when the mouseenter event listener is triggered, the .on() method generates an event object that we pass into the callback function
+	inside the callback function, we select event.currentTarget (this refers to the .example-class element that the user has moused over)
+		you will only use it inside a callback function
+  
+when we change the code from:
+	$('.product-photo').on('mouseenter',() => {
+		$('.product-photo').addClass('photo-active');
+		}).on('mouseleave', () => {
+		$('.product-photo').removeClass('photo-active');
+	})
+  
+  	to
+  
+  	$('.product-photo').on('mouseenter', event => {
+   		$(event.currentTarget).addClass('photo-active')
+ 	 	}).on('mouseleave', event => {
+    	$(event.currentTarget).removeClass('photo-active')
+  	})
+
+	instead of all product-photo classes being zoomed in, only the currentTarget is being zoomed in
