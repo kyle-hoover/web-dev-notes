@@ -1,0 +1,31 @@
+Document Object Model = a tree of objects based on the HTML document that is created by the browser when it loads a page
+
+elements inside other elements are considered descendants
+	we use family words to refer to these relationships
+	for instance, an outer <div> would be considered the parent of any <div> element inside it (those with class 'child' above)
+	any other <div>s inside of 'parent' on the same level as 'child' are considered siblings of each other
+	a <p> in any 'child' would itself be a child of the 'child' element that contains it and a grandchild of 'parent'
+	
+parent = outermost element of all elements inside of it
+
+children = elements inside the outer element
+
+.children() = allows us to target children elements
+
+<div class='parent' id='holder'>
+	<div>Child <span>1</span></div>
+	<div>Child <span>2</span></div>
+	<div>Child <span>3</span></div>
+</div>
+
+the <div>Child elements are the children
+
+const $kids = $('#holder').children();
+
+$kids.on('click', event => {
+	$(event.currentTarget).css('border', '1px solid black');
+});
+	the $kids variable refers to all children of the element with id 'holder' (the divs inside '#holder')
+	.on() method adds the click event handler to these $kids
+	when one of them is clicked, jQuery will add a border around it that is 1px wide and solid black
+	
