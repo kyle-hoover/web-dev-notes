@@ -36,3 +36,22 @@ we can transform $('#nav-dropdown').hide() to a jQuery object
 .on() = adds event handlers to jQuery objects
 	includes a string to listen for an event trigger ('click' for example when a user clicks something)
 	and a callback function for when the event is triggered (loginForm.show() for example to show a login form)
+	
+$('#login').on('click', () => {
+  $loginForm.show();
+})
+	when the login id is clicked, show the loginForm
+	
+$(document).ready(() => {
+	const $menuButton = $('.menu-button');
+	const $navDropdown = $('#nav-dropdown');
+	
+		this creates the jQuery objects $menuButton and $navDropdown (const = var in this case)
+	
+	$menuButton.on('click', () => {
+    	$navDropdown.show();
+		
+		on the menu button being clicked, show the navDropdown 
+  	});
+})
+
