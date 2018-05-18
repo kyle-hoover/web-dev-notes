@@ -53,5 +53,11 @@ $(document).ready(() => {
 		
 		on the menu button being clicked, show the navDropdown 
   	});
+	
+	$navDropdown.on('mouseleave', () => {
+	$navDropdown.hide();
+	
+		on the mouse leaving the menu, hide the navDropdown
+  })
 })
 
