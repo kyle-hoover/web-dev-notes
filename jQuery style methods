@@ -5,3 +5,13 @@ $('.example-class').css('color', '#FFFFFF');
 	.css = the first argument is the CSS property we want to change (in this case, that's 'color')
 	#FFFFFF = new value for the given property in the first argument (the .css() method changes the color of .example-class elements to '#FFFFFF')
 	
+  $('.menu-button').on('mouseenter', () => {
+    $('.menu-button').css('color', '#C3FF00');
+  })
+  
+To set multiple properties at once, you can pass the whole object into the .css() method as a single element.
+	$('.example-class').css({
+		color: '#FFFFFF',
+		backgroundColor: '#000000',
+		fontSize: '20px'
+	});
