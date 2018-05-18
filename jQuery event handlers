@@ -14,3 +14,19 @@ event listeners:
 		$('.example-class').on('mouseenter',  () => {
 	'mouseleave' = triggers a callback function when a user's mouse leaves the area that an element occupies
 		$('.example-class').on('mouseleave', () => {
+
+chaining events = instead of re-declaring the HTML element you're selecting, you can append one event to another
+	$('.example-class').on('mouseenter', () => {
+		$('.example-class-one').show();
+		}).on('mouseleave', () => {
+		$('.example-class-one').hide();
+});
+	you can start the next change after the ending brackets of the previous chain
+
+$('.product-photo').on('mouseenter',() => {
+	$('.product-photo').addClass('photo-active');
+	}).on('mouseleave', () => {
+	$('.product-photo').removeClass('photo-active');
+})
+	this says that for our product-photo class, when the mouse enters, we will add a css class to zoom in (photo-active)
+	when the mouse leaves, we will remove the photo-active class (which will effectively zoom back out)
