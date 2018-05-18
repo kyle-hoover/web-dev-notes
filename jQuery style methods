@@ -15,3 +15,16 @@ To set multiple properties at once, you can pass the whole object into the .css(
 		backgroundColor: '#000000',
 		fontSize: '20px'
 	});
+
+.animate() = has css value change over a period of time
+	the first argument is a JavaScript object of CSS property/value pairs that represent an element's end state
+	the second argument determines how long the animation takes to complete
+		default value is 400 milliseconds
+	 you can use a number (in milliseconds) or the strings 'fast' or 'slow'
+	 
+$('.example-class').animate({
+	height: '100px',
+	width: '100px',
+	borderWidth: '10px'
+}, 500);
+
