@@ -1,0 +1,38 @@
+jQuery is like legos
+	Let's use Legos as an analogy for understanding how jQuery works. With an infinite number of Legos, you could build an entire city — 
+	of course, this would take a long time. What if you were given pre-made Lego buildings, Lego roads, Lego parks, etc? You could build a city
+	much faster.
+
+	The JavaScript language represents an infinite supply of Lego blocks — the possibilities are endless but time-consuming. 
+	The pre-made Lego structures are like jQuery methods. You can use these methods to add dynamic behavior, such as .hide(), .show(), 
+	.fadeIn(), .fadeOut() etc., to HTML elements.
+	
+jQuery should be loaded before javaScript 
+
+how to add jQuery
+	<script
+  		src="https://code.jquery.com/jquery-3.2.1.min.js"
+  		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  		crossorigin="anonymous"></script>
+		
+.ready() = waits until the HTML page's DOM is ready to manipulate.
+
+$(document).ready(() => {
+	the .ready() method waits until the browser finishes rendering the HTML document before triggering a callback function
+	
+$('.someClass').handlerMethod();
+	every element with a class of 'someClass' is targeted
+	we prepend the class name with a period (.someClass)
+	then we call the .handlerMethod() on all of the referenced items.
+	
+to select by id, we prepend the element's id name with the # symbol
+	we target the #someId element and call the .hide() method on it
+	the .hide() method hides the someId element when the web page renders to a client's browser.
+	
+we can transform $('#nav-dropdown').hide() to a jQuery object
+	var $navDropdown = $('#nav-dropdown');
+  	$navDropdown.hide();
+
+.on() = adds event handlers to jQuery objects
+	includes a string to listen for an event trigger ('click' for example when a user clicks something)
+	and a callback function for when the event is triggered (loginForm.show() for example to show a login form)
