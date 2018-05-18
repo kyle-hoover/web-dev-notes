@@ -28,4 +28,27 @@ $kids.on('click', event => {
 	the $kids variable refers to all children of the element with id 'holder' (the divs inside '#holder')
 	.on() method adds the click event handler to these $kids
 	when one of them is clicked, jQuery will add a border around it that is 1px wide and solid black
+
+$(".shoe-details").children().removeClass('disabled')
+	selected the shoe-details class
+	found the children
+	removed the disabled class from the children
 	
+$('.choice').on('click', event => {
+	$(event.currentTarget).parent().hide();
+});
+	in the example above, the .parent() method targets the parent element of '.choice' elements and removes it from the DOM
+	
+$('.choice').on('click', event => {
+	$(this).siblings().removeClass('selected');
+	$(event.currentTarget).addClass('selected');
+});
+	in the code above, the .siblings() method targets elements adjacent to the clicked '.choice' and removes the 'selected' class from any previously clicked '.choice's 
+	then the 'selected' class is added only to the clicked '.choice'
+	
+$('.shoe-details li').on('click', event => {
+	$(event.currentTarget).addClass('active');
+	$(event.currentTarget).siblings().removeClass("active");
+	
+	so when users click on the button from shoe-details li (making it active) and removing the active classes from siblings 
+
