@@ -1,0 +1,15 @@
+AngularJS = a JavaScript web framework aimed to make web apps simple to build and easy to maintain
+
+module = contains the different components of an AngularJS app
+	for example <body ng-app="myApp">
+
+directive = defines the application's scope
+	tells AngularJS that the myApp module will live within the <body> element, termed the application's scope
+	<body ng-app="myApp"> = ng-app is the directive
+	
+controller = manages the app's data
+
+expressions = display values on the page
+
+<h2> {{promo}} </h2>
+	we can use the $scope.promo = "" in javascript to assign a value to this promo item
