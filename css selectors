@@ -1,0 +1,42 @@
+linking css in html = <link href="./style.css" type="text/css" rel="stylesheet"> (assuming the css is in the same directory as HTML)
+
+p { = selects all paragraph elements
+
+.brand { = selects classes (in this case all classes with the name brand)
+
+can also include two different classes in html:
+	.green {
+		color: green;
+	}
+	.bold {
+		font-weight: bold;
+	}
+	
+	<h1 class="green bold"> ... </h1>
+	
+#large-title { = selects IDs (in this case all IDs with the name large-title)
+
+css places priority on specificity (least important being tag then class then ID being most important)
+
+h1.special { = would select only the h1 elements that have a class of special 
+	if a p element also had a class of special, the rule in the example would not style the paragraph
+	
+<ul class='main-list'>
+  <li> ... </li>
+  <li> ... </li>
+  <li> ... </li>
+</ul>
+	The nested <li> elements are selected with the following CSS:
+		.main-list li {
+		
+p {
+  color: blue;
+}
+
+
+.main p {
+  color: red;
+}
+	Both of these CSS rules define what a p element should look like
+	Since .main p has a class and a p tag as its selector, only the p elements inside the .main element will appear red
+	This occurs despite there being another more general rule that states p elements should be blue
