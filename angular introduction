@@ -27,3 +27,10 @@ in javascript:
 in html:
 	<p class="title"> {{product.name}} </p> = replaces the paragraph with the name in the .product (in this case "The Book of Trees")
 	<p class="price"> {{product.price}} </p> = replaces the paragraph with the price in the .product (in this case 19)
+	<p class="price"> {{ product.price | currency }} </p> = changes the price to a currency
+
+filter = {{ output | format }}
+	AngularJS gets the value of product.price
+	It sends this number into the currency filter. The pipe symbol (|) takes the output on the left and "pipes" it to the right
+	The filter outputs a formatted currency with the dollar sign and the correct decimal places
+	
