@@ -110,3 +110,15 @@ $heading.on('click', () => {
 	then the callback function will toggle the class of the $heading's next sibling, the ol element
 	
  jQuery also has a method called .prev() that can look at the previous sibling
+ 
+ .find() =  finds and targets singular or multiple elements that are descendants of an element
+ 	useful if want to target children but .children() might target all/too many elements
+	traverses all descendants of the specified element, not just the first level down
+	
+const $items = $('.myList').find('li');
+	the .find() method takes a parameter that specifies how to filter results
+	this parameter is just like anything you might use to select a jQuery object, ('#id', '.class', tag, etc.)
+	.find() will return all descendants that match the passed in selector
+	in the example above, the .find() method will return all <li> child elements inside the '.myList' element
+	
+
