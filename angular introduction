@@ -8,8 +8,22 @@ directive = defines the application's scope
 	<body ng-app="myApp"> = ng-app is the directive
 	
 controller = manages the app's data
+	ng-controller="MainController" = means that we can use the file MainController to manipulate this information
 
 expressions = display values on the page
 
 <h2> {{promo}} </h2>
 	we can use the $scope.promo = "" in javascript to assign a value to this promo item
+
+workflow:
+	1.	Create a module, and use ng-app in the view to define the application scope.
+	2.	Create a controller, and use ng-controller in the view to define the controller scope.
+	3.	Add data to $scope in the controller so they can be displayed with expressions in the view.
+			these are going to be the html elements (<h2> {{promo}} </h2>)
+			
+in javascript:
+	$scope.product = {name: 'The Book of Trees', price: 19}
+	
+in html:
+	<p class="title"> {{product.name}} </p> = replaces the paragraph with the name in the .product (in this case "The Book of Trees")
+	<p class="price"> {{product.price}} </p> = replaces the paragraph with the price in the .product (in this case 19)
