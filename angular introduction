@@ -6,9 +6,11 @@ module = contains the different components of an AngularJS app
 directive = defines the application's scope
 	tells AngularJS that the myApp module will live within the <body> element, termed the application's scope
 	<body ng-app="myApp"> = ng-app is the directive
+	this is what we plug into HTML to connect to the controller (javascript)
 	
 controller = manages the app's data
 	ng-controller="MainController" = means that we can use the file MainController to manipulate this information
+	this is basically the javascript stuff
 
 expressions = display values on the page
 
@@ -54,6 +56,17 @@ directives = bind behavior to HTML elements.
 	When it finds one, AngularJS triggers that behavior (like attaching a scope or looping through an array).
 
 ng-repeat = a directive that loops through an array and displays each element
-	the ng-repeat repeats all the HTML inside <div class="col-md-6"> for each element in the products array 
-		(ng-repeat shows both products in the $scope.products array) 
-	instead of writing the same HTML twice as before, we just use ng-repeat to generate the HTML twice
+	<div ng-repeat="product in products" class="col-md-6"> 
+		the ng-repeat repeats all the HTML inside <div class="col-md-6"> for each element in the products array 
+			(ng-repeat shows both products in the $scope.products array) 
+		instead of writing the same HTML twice as before, we just use ng-repeat to generate the HTML twice
+
+
+ng-click = a directive that runs a function when clicked
+	<p class="likes" ng-click="plusOne($index)">{{ product.likes }}</p>
+		when <p class="likes"> is clicked, ng-click tells AngularJS to run the plusOne() function in the controller
+	$scope.plusOne = function(index) {
+   		$scope.products[index].likes += 1;}
+			the plusOne() function gets the index of the product that was clicked, and then adds one to that product's likes property
+				plusOne() doesn't interact with the view at all; it just updates the controller. 
+			any change made to the controller shows up in the view
