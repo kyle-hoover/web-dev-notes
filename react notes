@@ -42,3 +42,18 @@ const JSX = <div>
       If you remove the div, the JSX will no longer transpile. 
       Keep this in mind, since it will also apply when you return JSX elements in React components.
       
+JSX comments = {/* */} wraps around the comment text
+
+So far, you've learned that JSX is a convenient tool to write readable HTML within JavaScript. 
+  With React, we can render this JSX directly to the HTML DOM using React's rendering API known as ReactDOM.
+  
+ReactDOM = a simple method to render React elements to the DOM
+  
+ReactDOM.render(componentToRender, targetNode)
+	the first argument is the React element or component that you want to render
+	the second argument is the DOM node that you want to render the component to
+	ReactDOM.render() must be called after the JSX element declarations, just like how you must declare variables before using them
+
+ReactDOM.render(JSX, document.getElementById('challenge-node'))
+	takes the argument JSX and renders it to the challenge node ID 
+	use document.getElementById() to select the DOM node to render them to
