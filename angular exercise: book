@@ -33,7 +33,8 @@
         <p class="price"> {{product.price | currency}} </p>
         <p class="date"> {{product.pubdate | date}} </p>
         <div class="rating">
-          <p class="likes" ng-click="plusOne($index)">{{ product.likes }}</p>
+          <p class="likes" ng-click="plusOne($index)">+{{ product.likes }}</p>              adds a like button
+          <p class="dislikes" ng-click="minusOne($index)">-{{ product.dislikes }}</p>       adds a dislike button
         </div>
       </div>
     </div>
@@ -76,6 +77,11 @@ app.controller('MainController', ['$scope', function($scope) {
   $scope.plusOne = function(index) {
    $scope.products[index].likes += 1;   this function is to add +1 to the "likes button" on the page
  };
+ 	$scope.minusOne = function(index) {
+    $scope.products[index].dislikes += 1; this function is to add +1 to the "dislikes button" on the page
+  }
+  
+ 
 }]);
 
 
