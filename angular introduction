@@ -49,50 +49,6 @@ angular filters:
 		If a number is used as input, it is converted to a string.
 	orderBy = Returns an array containing the items from the specified collection, ordered by a comparator function based on the values computed using the expression predicate.
 
-Well done! You got both books in $scope.products to show up in the view. How does it work?
-
-HTML:
-    <div class="main" ng-controller="MainController">
-      <div ng-repeat="product in products" class="col-md-6"> 
-  <div class="thumbnail"> 
-    <img src="img/the-book-of-trees.jpg"> 
-    <p class="title">{{ product.name }}</p> 
-    <p class="price">{{ product.price | currency }}</p> 
-    <p class="date">{{ product.pubdate | date }}</p> 
-  </div> 
-</div>
-      <div class="container">
-        <h1> {{title}} </h1>
-        <h2> {{promo}} </h2>
-        <p class="title"> {{product.name | uppercase}} </p>
-        <p class="price"> {{product.price | currency}} </p>
-        <p class="date"> {{product.pubdate | date}} </p>
-      </div>
-    </div>
-    
-Javascript:
-	app.controller('MainController', ['$scope', function($scope) { 
-  		$scope.title = 'hello world'; 
- 		$scope.promo = 'hey';
-		$scope.products = [ 
-  			{ 
-    				name: 'The Book of Trees', 
-    				price: 19, 
-    				pubdate: new Date('2014', '03', '08'), 
-    				cover: 'img/the-book-of-trees.jpg' 
-  			}, 
-  			{ 
-    				name: 'Program or be Programmed', 
-    				price: 8, 
-    				pubdate: new Date('2013', '08', '01'), 
-    				cover: 'img/program-or-be-programmed.jpg' 
-  			} 
-		]
-	}]);
-      
-In the controller, we used products to store an array containing two objects.
-Then in the view, we added <div ng-repeat="product in products">. 
-Like ng-app and ng-controller, the ng-repeat is a directive. 
-It loops through an array and displays each element. 
-Here, the ng-repeat repeats all the HTML inside <div class="col-md-6"> for each element in the products array.
-In this way, ng-repeat shows both products in the $scope.products array. Instead of writing the same HTML twice as before, we just use ng-repeat to generate the HTML twice.
+directives = bind behavior to HTML elements. 
+	When the app runs, AngularJS walks through each HTML element looking for directives. 
+	When it finds one, AngularJS triggers that behavior (like attaching a scope or looping through an array).
