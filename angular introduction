@@ -52,3 +52,8 @@ angular filters:
 directives = bind behavior to HTML elements. 
 	When the app runs, AngularJS walks through each HTML element looking for directives. 
 	When it finds one, AngularJS triggers that behavior (like attaching a scope or looping through an array).
+
+ng-repeat = a directive that loops through an array and displays each element
+	the ng-repeat repeats all the HTML inside <div class="col-md-6"> for each element in the products array 
+		(ng-repeat shows both products in the $scope.products array) 
+	instead of writing the same HTML twice as before, we just use ng-repeat to generate the HTML twice
