@@ -16,7 +16,7 @@
     </div>
 
     <div class="main" ng-controller="MainController">
-      <div ng-repeat="product in products" class="col-md-6"> 
+      <div ng-repeat="product in products" class="col-md-6"> 			in the view, we added <div ng-repeat="product in products"> (ng-app and ng-controller, the ng-repeat is a directive) It loops through an array and displays each element. the ng-repeat repeats all the HTML inside <div class="col-md-6"> for each element in the products array (ng-repeat shows both products in the $scope.products array) Instead of writing the same HTML twice as before, we just use ng-repeat to generate the HTML twice 
   <div class="thumbnail"> 
     <img ng-src="{{ product.cover }}"> 
           replaced <img src="img/the-book-of-trees.jpg"> with <img ng-src="{{ product.cover }}"> (The ng-src is a directive that sets the <img> element's src to a property in the controller.)
@@ -56,7 +56,7 @@
 app.controller('MainController', ['$scope', function($scope) { 
   $scope.title = 'hello world'; 
   $scope.promo = 'hey';
-	$scope.products = [ 
+  $scope.products = [ 				we used products to store an array containing two objects.
   { 
     name: 'The Book of Trees', 
     price: 19, 
