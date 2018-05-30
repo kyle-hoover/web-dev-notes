@@ -70,3 +70,10 @@ ng-click = a directive that runs a function when clicked
 			the plusOne() function gets the index of the product that was clicked, and then adds one to that product's likes property
 				plusOne() doesn't interact with the view at all; it just updates the controller. 
 			any change made to the controller shows up in the view
+
+Process:
+	1. A user visits the AngularJS app.
+	2. The view presents the app's data through the use of expressions, filters, and directives. Directives bind new behavior HTML elements.
+	3. A user clicks an element in the view. If the element has a directive, AngularJS runs the function.
+	4. The function in the controller updates the state of the data.
+	5. The view automatically changes and displays the updated data. The page doesn't need to reload at any point.
