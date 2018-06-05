@@ -1,0 +1,19 @@
+ecmascript = a specification for interpreting codes and languages like javascript
+	not a language, but an evolving standard
+
+ES6 = a different name for ecmascript 2015
+
+browsers use ecmascript to interpret javascript (THEYRE THE SAME THING!!!!)
+
+not all browsers support ES6, so programmers usually have to use transpilers like Babel to transform ES6 to old javascript
+
+jQuery = a library of javascript functions and programs that allow us to use less code
+
+frameworks = open source front end application frameworks that allow developers to build in-browser applications that generate websites for us
+	traditional technologies generate pages on the server then send them to the browser
+	these run on the browser and pull data from the server
+	makes the pages load very fast, but can be catastrophic if javascript is not working
+	react and angular
+	
+node.js = used to run advanced operations and applications on servers and computers using javascript
+	allows us to use javascript as a server site programming language
