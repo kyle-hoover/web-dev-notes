@@ -45,3 +45,7 @@ You can use the hr tag to add a horizontal line across the width of its containi
   In HTML, hr is a self-closing tag, and therefore doesn't need a separate closing tag.
   <h4><del>Google</del>Alphabet</h4>
       <hr>
+
+The font size of header tags (h1 through h6) should generally be larger than the font size of paragraph tags. 
+This makes it easier for the user to visually understand the layout and level of importance of everything on the page. 
+You use the font-size property to adjust the size of the text in an element.
