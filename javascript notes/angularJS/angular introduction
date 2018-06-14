@@ -32,7 +32,7 @@ in html:
 	<p class="price"> {{ product.price | currency }} </p> = changes the price to a currency
 
 filter = formats the value of an expression
-	{{ output | format }}
+	{{ output | filter }}
 	AngularJS gets the value of product.price
 	It sends this number into the currency filter. The pipe symbol (|) takes the output on the left and "pipes" it to the right
 	The filter outputs a formatted currency with the dollar sign and the correct decimal places
