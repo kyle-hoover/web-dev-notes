@@ -40,3 +40,8 @@ To strikethrough text, which is when a horizontal line cuts across the character
   With the del tag, the browser applies the CSS of text-decoration: line-through; to the element.
   <h4><del>Google</del> Alphabet</h4>
 
+You can use the hr tag to add a horizontal line across the width of its containing element. 
+  This can be used to define a change in topic or to visually separate groups of content.
+  In HTML, hr is a self-closing tag, and therefore doesn't need a separate closing tag.
+  <h4><del>Google</del>Alphabet</h4>
+      <hr>
