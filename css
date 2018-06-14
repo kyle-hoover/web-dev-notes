@@ -25,3 +25,4 @@ Here's an example that changes the height of an image to 20px:
 
 To make text bold, you can use the strong tag.
   With the strong tag, the browser applies the CSS of font-weight: bold; to the element.
+  <p>Google was founded by Larry Page and Sergey Brin while they were Ph.D. students at <strong>Stanford University</strong>.</p>
