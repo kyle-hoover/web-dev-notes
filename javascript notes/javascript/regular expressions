@@ -90,3 +90,9 @@ Extract Matches:
 		let ourRegex = /expressions/;
 		ourStr.match(ourRegex);
 		// Returns ["expressions"]
+
+	Another example:
+	
+		let extractStr = "Extract the word 'coding' from this string.";
+		let codingRegex = /coding/; 
+		let result = extractStr.match(codingRegex); 
