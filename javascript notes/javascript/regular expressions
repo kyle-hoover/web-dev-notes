@@ -111,3 +111,5 @@ Find More Than One Match:
 		let repeatRegex = /Repeat/g;
 		testStr.match(repeatRegex);
 		// Returns ["Repeat", "Repeat", "Repeat"]
+
+	You can have multiple flags on your regex like /search/gi
