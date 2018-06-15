@@ -232,3 +232,9 @@ Using A Range:
 		let myRegex = /[a-z0-9]/ig;
 		jennyStr.match(myRegex);
 		// matches all letters and numbers in jennyStr
+
+	Another Example:
+		
+		let quoteSample = "Blueberry 3.141592653s are delicious.";
+		let myRegex = /[h-s2-6]/gi;
+		let result = quoteSample.match(myRegex); 
