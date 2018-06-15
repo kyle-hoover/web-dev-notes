@@ -58,3 +58,13 @@ JavaScript in JSX:
 			<h1>{2+3}</h1>, document.getElementById('app'));
 	
 	Everything inside of the curly braces will be treated as regular JavaScript.
+
+	When you inject JavaScript into JSX, that JavaScript is part of the same environment as the rest of the JavaScript in your file.
+
+	That means that you can access variables while inside of a JSX expression, even if those variables were declared on the outside.
+		
+		// Declare a variable:
+			const name = 'Gerdo';
+
+		// Access your variable from inside of a JSX expression:
+			const greeting = <p>Hello, {name}!</p>;
