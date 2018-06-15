@@ -146,3 +146,9 @@ Wildcard Period:
 			let huRegex = /hu./;
 			humStr.match(huRegex); // Returns ["hum"]
 			hugStr.match(huRegex); // Returns ["hug"]
+
+		Another example:
+			let exampleStr = "Let's have fun with regular expressions!";
+			let unRegex = /.un/; 
+			let result = unRegex.test(exampleStr);
+			//this can match with strings like "run", "sun", "fun", "pun", "nun", and "bun"
