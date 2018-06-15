@@ -96,3 +96,18 @@ Extract Matches:
 		let extractStr = "Extract the word 'coding' from this string.";
 		let codingRegex = /coding/; 
 		let result = extractStr.match(codingRegex); 
+
+Find More Than One Match:
+	So far, you have only been able to extract or search a pattern once.
+
+		let testStr = "Repeat, Repeat, Repeat";
+		let ourRegex = /Repeat/;
+		testStr.match(ourRegex);
+		// Returns ["Repeat"]
+
+	To search or extract a pattern more than once, you can use the g flag.
+
+		let testStr = "Repeat, Repeat, Repeat";
+		let repeatRegex = /Repeat/g;
+		testStr.match(repeatRegex);
+		// Returns ["Repeat", "Repeat", "Repeat"]
