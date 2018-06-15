@@ -88,7 +88,15 @@ Extract Matches:
 	
 	You can also extract the actual matches you found with the .match() method.
 
-	To use the .match() method, apply the method on a string and pass in the regex inside the parentheses. Here's an example:
+	To use the .match() method, apply the method on a string and pass in the regex inside the parentheses. 
+	
+		This flip flops from the .test() method
+		
+		let whatWereTesting = "hey there ;))))";
+		let whatWeWantToFind = "hey";
+		let result = whatWereTesting.match(whatWeWantToFind);
+	
+	Here's an example:
 
 		"Hello, World!".match(/Hello/);
 		// Returns ["Hello"]
