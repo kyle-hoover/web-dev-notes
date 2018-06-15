@@ -119,3 +119,6 @@ Attributes:
     				src={pics.owlCat} 
     				alt="Ghastly Abomination" />
 		);
+
+Event Listeners:
+	
