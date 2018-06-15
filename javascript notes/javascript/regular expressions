@@ -70,3 +70,9 @@ Ignore Case:
 		An example of using this flag is /ignorecase/i. 
 		
 		This regex can match the strings "ignorecase", "igNoreCase", and "IgnoreCase".
+	
+	Example:
+	
+		let myString = "freeCodeCamp";
+		let fccRegex = /freecodecamp/i;
+		let result = fccRegex.test(myString);
