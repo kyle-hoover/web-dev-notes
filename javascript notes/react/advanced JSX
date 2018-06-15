@@ -68,3 +68,7 @@ JavaScript in JSX:
 
 		// Access your variable from inside of a JSX expression:
 			const greeting = <p>Hello, {name}!</p>;
+
+		const theBestString = 'tralalalala i am da best';
+
+		ReactDOM.render(<h1>{theBestString}</h1>, document.getElementById('app'));
