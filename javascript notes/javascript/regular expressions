@@ -21,10 +21,16 @@ Test Method:
 	
 		The .test() method takes the regex, applies it to a string (which is placed inside the parentheses), and returns true or false if your pattern finds something or not.
 		
-		let testStr = "freeCodeCamp";
-		let testRegex = /Code/;
-		var result = testRegex.test(testStr);
-		// Returns true
+			let whatWereTesting = "hey there ;)))";
+			let whatWeWantToFind = /hey/;
+			let usedToStoreAnswer = whatWeWantToFind.test(whatWereTesting);
+		
+		Example:
+		
+			let testStr = "freeCodeCamp";
+			let testRegex = /Code/;
+			let result = testRegex.test(testStr);
+			// Returns true
 	
 	That regex searched for a literal match of the string "Hello". 
 	
