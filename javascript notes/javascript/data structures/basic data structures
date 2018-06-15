@@ -14,27 +14,27 @@ One Dimensional Array:
 Multi-dimensional Array:
 	A more complex implementation of an array can be seen below. 
 		let complexArray = [
-		[
-			{
-				one: 1,
-				two: 2
-			},
-			{
-				three: 3,
-				four: 4
-			}
-		],
-		[
-			{
-				a: "a",
-				b: "b"
-			},
-			{
-				c: "c",
-				d: “d”
-			}
-		]
-	];
+			[
+				{
+					one: 1,
+					two: 2
+				},
+				{
+					three: 3,
+					four: 4
+				}
+			],
+			[
+				{
+					a: "a",
+					b: "b"
+				},
+				{
+					c: "c",
+					d: “d”
+				}
+			]
+		];
 	
 	This is known as a multi-dimensional array, or an array that contains other arrays. 
 	
