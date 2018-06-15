@@ -113,3 +113,9 @@ Find More Than One Match:
 		// Returns ["Repeat", "Repeat", "Repeat"]
 
 	You can have multiple flags on your regex like /search/gi
+	
+	Another example:
+		
+		let twinkleStar = "Twinkle, twinkle, little star";
+		let starRegex = /twinkle/gi;
+		let result = twinkleStar.match(starRegex); 
