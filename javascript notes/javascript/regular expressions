@@ -25,3 +25,18 @@ Test Method:
 		let testRegex = /Code/;
 		var result = testRegex.test(testStr);
 		// Returns true
+	
+	That regex searched for a literal match of the string "Hello". 
+	
+	Here's another example searching for a literal match of the string "Kevin":
+
+		let testStr = "Hello, my name is Kevin.";
+		let testRegex = /Kevin/;
+		testRegex.test(testStr);
+		// Returns true
+
+	Any other forms of "Kevin" will not match. For example, the regex /Kevin/ will not match "kevin" or "KEVIN".
+
+		let wrongRegex = /kevin/;
+		wrongRegex.test(testStr);
+		// Returns false
