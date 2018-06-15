@@ -1,0 +1,24 @@
+The text-transform property in CSS is used to change the appearance of text. 
+	It's a convenient way to make sure text on a webpage appears consistently, without having to change the text content of the actual HTML elements.
+	Example: text-transform: uppercase
+
+The following table shows how the different text-transformvalues change the example text "Transform me".
+
+Value		Result
+lowercase	"transform me"
+uppercase	"TRANSFORM ME"
+capitalize	"Transform Me"
+initial		Use the default value
+inherit		Use the text-transform value from the parent element
+none		Default: Use the original text
+
+The font-size property is used to specify how large the text is in a given element. 
+	This rule can be used for multiple elements to create visual consistency of text on a page. 
+	Example: font-size: 62px;
+
+The font-weight property sets how thick or thin characters are in a section of text.
+	Example: font-weight: 800;
+	
+CSS offers the line-height property to change the height of each line in a block of text. 
+	As the name suggests, it changes the amount of vertical space that each line of text gets.
+	Example: line-height: 25px;
