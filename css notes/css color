@@ -8,9 +8,24 @@ b = blue
 a = alpha/level of opacity
 
 The RGB values can range from 0 to 255. 
-The alpha value can range from 1, which is fully opaque or a solid color, to 0, which is fully transparent or clear. 
-rgba() is great to use in this case, as it allows you to adjust the opacity. 
-This means you don't have to completely block out the background.
+	The alpha value can range from 1, which is fully opaque or a solid color, to 0, which is fully transparent or clear. 
+	rgba() is great to use in this case, as it allows you to adjust the opacity. 
+	This means you don't have to completely block out the background.
 
 You'll use background-color: rgba(45, 45, 45, 0.1) for this challenge. 
-It produces a dark gray color that is nearly transparent given the low opacity value of 0.1.
+	It produces a dark gray color that is nearly transparent given the low opacity value of 0.1.
+
+The box-shadow property applies one or more shadows to an element.
+	The box-shadow property takes values for offset-x (how far to push the shadow horizontally from the element), offset-y (how far to push the shadow vertically from the element), blur-radius, spread-radius and a color value, in that order. 
+		The blur-radius and spread-radius values are optional.
+
+Here's an example of the CSS to create multiple shadows with some blur, at mostly-transparent black colors:
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	this adds a shadow behind whatever element it's applied to
+	
+The opacity property in CSS is used to adjust the opacity, or conversely, the transparency for an item.
+	A value of 1 is opaque, which isn't transparent at all.
+	A value of 0.5 is half see-through.
+	A value of 0 is completely transparent.
+
+The value given will apply to the entire element, whether that's an image with some transparency, or the foreground and background colors for a block of text.
