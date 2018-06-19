@@ -74,14 +74,8 @@ Destructuring to Assign Variables from Arrays:
 		let a = 8, b = 6;
 		(() => {
   			"use strict";
-  			[b, a] = [a, b]; 
+  			[b, a] = [a, b]; 		don't have to use const because b and a are defined by "let" above
 		})();
 		console.log(a); // should be 6
 		console.log(b); // should be 8
-let a = 8, b = 6;
-(() => {
-  "use strict";
-  [b, a] = [a, b]; 
-})();
-console.log(a); // should be 6
-console.log(b); // should be 8
+
