@@ -43,7 +43,7 @@ Destructuring to assign variables from nested objects:
 
 		function getMaxOfTmrw(forecast) {
   			"use strict";
-  			const { tomorrow : { max: maxOfTomorrow }} = LOCAL_FORECAST; 
+  			const { tomorrow : { max: maxOfTomorrow }} = forecast; 
   			return maxOfTomorrow;
 		}
 
