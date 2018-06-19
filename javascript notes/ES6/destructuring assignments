@@ -5,7 +5,7 @@ Destructuring to assign variables from objects:
 
   Consider the following ES5 code:
 
-	  var voxel = {x: 3.6, y: 7.4, z: 6.54 };
+	var voxel = {x: 3.6, y: 7.4, z: 6.54 };
   	var x = voxel.x; // x = 3.6
   	var y = voxel.y; // y = 7.4
   	var z = voxel.z; // z = 6.54
@@ -48,3 +48,7 @@ Destructuring to assign variables from nested objects:
 		}
 
 		console.log(getMaxOfTmrw(LOCAL_FORECAST)); // should be 84.6
+		
+	In this example, forecast is the variable passed to the function that the assignment asks you to write. 
+	In your intitial code you used the global variable instead of the passed through parameter. 
+	In this case it worked out fine but it’s not best practice and would not have worked if LOCAL_FORECAST was defined locally within another function.
