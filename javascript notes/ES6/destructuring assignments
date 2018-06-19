@@ -1,4 +1,3 @@
-
 Destructuring to assign variables from objects:
   We saw earlier how spread operator can effectively spread, or unpack, the contents of the array.
 
@@ -38,8 +37,8 @@ Destructuring to assign variables from nested objects:
 	
 	Example
 		const LOCAL_FORECAST = {
-  	today: { min: 72, max: 83 },
-  	tomorrow: { min: 73.3, max: 84.6 }
+  			today: { min: 72, max: 83 },
+  			tomorrow: { min: 73.3, max: 84.6 }
 		};
 
 		function getMaxOfTmrw(forecast) {
