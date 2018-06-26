@@ -24,3 +24,5 @@ Example function:
   
   function sayHiTo("Kyle")  //prints "hi Kyle" (person = "Kyle" now)
     
+we can run a function by just calling it 
+  makeSandwichWith()
