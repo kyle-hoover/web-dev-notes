@@ -1,0 +1,37 @@
+Function to display todos:
+	
+	var todos = ["item1", "item2", "item3"]
+
+	function displayTodos() {
+		console.log("my todos:", todos);
+	}
+
+	displayTodos()
+	
+Function to add new todos:
+	
+	function addTodos() {
+		todos.push("new todo");
+	}
+	
+	this will add "new todo" to the end of our array
+	
+	this gives us an undefined and then we have to console.log the displayTodos() function so we will add that to the function for ease
+	
+	function addTodos() {
+		todos.push("new todo");
+		displayTodos;
+	}
+	
+Customize the todos being added:
+	
+	function addTodos(todo) {
+		todos.push(todo);	//make sure this is todo not todos because that would conflict with var todos!
+		displayTodos;
+	}
+	
+	now when we run the addTodos function, we need to specify what the new todo will be in the parameter!
+	
+	addTodos("do laundry") //dispalys ["item1", "item2", "item3", "do laundry"]
+	
+	
