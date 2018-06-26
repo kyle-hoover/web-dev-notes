@@ -1,0 +1,26 @@
+think of functions as recipes
+
+makeTurkeySandwich() {
+  put bread on bottom
+  put turkey on bread
+  put bread on top
+}
+
+makeSandwichWith _____
+  put bread on bottom;
+  put _____ on bread;
+  but bread on top;
+  
+makeSandwichWith(filling) {
+  put bread on bottom;
+  put filling on bread;
+  put bread on top;
+}
+
+Example function:
+  function sayHiTo(person) {
+    console.log("hi", person)
+  }
+  
+  function sayHiTo("Kyle")  //prints "hi Kyle" (person = "Kyle" now)
+    
