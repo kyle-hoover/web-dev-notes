@@ -1,0 +1,10 @@
+Basic function to delete a todo:
+	function deleteTodos() {
+		todos.splice(0, 1);						//0 is the position to start from, 1 is the amount to delete
+	}
+	
+Function with parameters:
+	function deleteTodos(position) {
+		todos.splice(position, 1);
+		displayTodos;
+	}
