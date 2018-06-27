@@ -9,8 +9,8 @@ What is an object?
 Getting this into JavaScript
 	var myComputer = {
 		operatingSystem:	"mac",			//Properties = operatingSystem, screenSize, purchaseYear
-		screenSize:	"13 inch",				//Values = "mac", "13 inch", 2016
-		purchaseYear:	2016,						//"mac" and "13 inch" are strings whereas we can keep 2016 as a number
+		screenSize:	"13 inch",			//Values = "mac", "13 inch", 2016
+		purchaseYear:	2016,				//"mac" and "13 inch" are strings whereas we can keep 2016 as a number
 	}
 
 Can call the object by just typing the name of it:
