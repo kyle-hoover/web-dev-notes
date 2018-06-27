@@ -2,7 +2,7 @@ Basic Example:
 	var k = {
 		name: "Kyle"
 		sayName:	function () {		//don't need to put the sayName function () because we're accessing through the property sayName
-			console.log(this);			//javascript uses the keyword "this" to refer to the entire object a function would be in
+			console.log(this);		//javascript uses the keyword "this" to refer to the entire object a function would be in
 		}
 		
 	kyle.sayName(); //outputs {name: "Kyle"}
