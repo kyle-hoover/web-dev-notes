@@ -8,3 +8,5 @@ Function with parameters:
 		todos.splice(position, 1);
 		displayTodos;
 	}
+
+	deleteTodos(0) //deletes the todo at position 0
