@@ -11,8 +11,8 @@ Basic Example:
 	
 If we want sayName to say "Kyle" rather than provide the whole object:
 		var k = {
-		name: "Kyle"
-		sayName:	function () {		
-			console.log(this.name);			
+			name: "Kyle",
+			sayName: function () {		
+				console.log(this.name);			
+			}
 		}
-		
