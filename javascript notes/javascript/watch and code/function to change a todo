@@ -1,0 +1,19 @@
+Basic outline:
+  function changeTodo() {
+		todos[0] = "something new";
+	}
+	
+	this works but it will only change the first todo and you can't specify the new value of that todo
+	
+	we want to be able to customize 2 things: the number in the brackets for todos (todos[0]) and the item it will equal ("something new")
+	
+With Parameters:
+	function changeTodo(position, new value) {	//this defines 2 new parameters the user can use to choose the position of the todos and what they want the new value to be
+		todos[position] = new value;
+	}
+	
+We'll also add a line to display the todos
+	function changeTodo(position, new value) {
+		todos[position] = new value;
+		displayTodos;
+	}
