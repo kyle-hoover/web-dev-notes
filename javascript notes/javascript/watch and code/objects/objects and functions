@@ -7,7 +7,7 @@ Basic Example:
 		
 	kyle.sayName(); //outputs {name: "Kyle"}
 	
-	//we don't use console.log(name) because name would be a variable and the name property is considered an object not a variable!
+	//we don't use console.log(name) because name would be a variable and the name property is considered an object property not a variable!
 	
 If we want sayName to say "Kyle" rather than provide the whole object:
 		var k = {
