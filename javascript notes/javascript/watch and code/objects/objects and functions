@@ -10,9 +10,11 @@ Basic Example:
 	//we don't use console.log(name) because name would be a variable and the name property is considered an object property not a variable!
 	
 If we want sayName to say "Kyle" rather than provide the whole object:
-		var k = {
-			name: "Kyle",
-			sayName: function () {		
-				console.log(this.name);			
-			}
+	var k = {
+		name: "Kyle",
+		sayName: function () {		
+			console.log(this.name);			
 		}
+	}
+
+	//prints Kyle
