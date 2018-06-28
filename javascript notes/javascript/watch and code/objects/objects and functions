@@ -18,3 +18,15 @@ If we want sayName to say "Kyle" rather than provide the whole object:
 	}
 
 	//prints Kyle
+
+Rewriting our old functions in an object:
+	var todoList = {
+  		todos: ["item 1", "item 2", "item3"],
+  		displayTodos: function() {					//call this in console using todoList.displayTodos()
+    			console.log("My todos:", this.todos);
+  		},
+  		addTodo: function(todo) {					//call this in console using todoList.addTodo("hey")
+    			this.todos.push(todo);
+    			this.displayTodos();
+  			}
+		},
