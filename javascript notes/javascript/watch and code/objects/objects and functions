@@ -30,3 +30,7 @@ Rewriting our old functions in an object:
     			this.displayTodos();
   			}
 		},
+		changeTodo: function(position, newValue) {			//call this in console using todoList.changeTodo(0, "yo")
+    			this.todos[position] = newValue
+   			this.displayTodos();
+  		},
