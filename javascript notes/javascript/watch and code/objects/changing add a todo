@@ -15,31 +15,11 @@ the first step is to clear out our todos because the simple values will be repla
 	}
 	
 next we need to update our addTodo function
-		addTodo: function(todoText) {	//pass in addTodo("hi")
+	addTodo: function(todoText) {	//pass in addTodo("hi")
     		this.todos.push({
 				todoText: todoText,	//the first todoText is the name of the property on the object (would grab the object and do .todoText) the second todoText is the parameter that the user changes/passes in 
 				completed: false	//this is by default false until the user marks the todo complete
 			});
     		this.displayTodos();
   		},
-	}
-	
-
-	var todoList = {
-		todos: [],
-		displayTodos: function() {
-			console.log('My Todos', this.todos);
-		},
-		addTodo: function(todo) {
-    		this.todos.push(todo);
-    		this.displayTodos();
-  		},
-		changeTodo: function(position, newValue) {
-    		this.todos[position] = newValue;
-   			this.displayTodos();
-  		},
-		deleteTodo: function(position) {
-			this.todos.splice(position, 1);
-			this.displayTodos;
-		}
 	}
