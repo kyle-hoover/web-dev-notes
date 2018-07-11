@@ -1,0 +1,23 @@
+we need to update the change function so it can target the new todoText property from the add a todo
+	
+	addTodo: function(todoText) {
+  	this.todos.push({
+    	todoText: todoText,				//our goal is to be able to target the first todoText here
+    	completed: false
+  	});
+  	this.displayTodos();
+  },
+	
+when we run our addTodo function, a new todo OBJECT is added to the blank ARRAY we initially made
+
+we need to be able to access this new object that was created in order to change it
+
+specifically, we want to target the second todoText (after the colon), because that was the text that was pushed to that object
+	
+our new change function:
+
+	changeTodo: function(position, todoText) {
+		this.todos[position].todoText = todoText;		//this accesses the object, .todos accesses our todos, [position] finds the position that's being targetted in our array of todos, .todoText is the property that we're changing
+		this.displayTodos();
+	}
+	
