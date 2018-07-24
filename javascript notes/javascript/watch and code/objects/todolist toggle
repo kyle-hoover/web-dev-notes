@@ -1,1 +1,10 @@
+toggle completed = boolean
 
+! = bang operator (shows the opposite)
+
+First part of our toggle function:
+	toggleCompleted: function(position) {							//needs a position so we know which todo we're toggling
+	
+Next part:
+	var todo = this.todos[position];						//a reference to our todos (we use position to grab a specific todo)
+  
